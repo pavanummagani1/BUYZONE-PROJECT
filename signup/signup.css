@@ -16,7 +16,7 @@ body{
 }
 .signupForm{
     background-color: transparent;
-    border: 5px solid  #fcbb68;
+    /* border: 5px solid  #fcbb68; */
     border-radius: 10px;
     padding: 20px;
     display: flex;

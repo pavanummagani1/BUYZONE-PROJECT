@@ -20,7 +20,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 5px solid #fcbb68;
+    /* border: 5px solid #fcbb68; */
 }
 .formTitle{
     color: #fff;
