@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>LOGIN</title>
+</head>
+
+<body>
+    <div class="loginForm">
+        <span class="formTitle">LOGIN IN</span>
+        <form id="loginForm">
+            <!-- Email -->
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter Your Email">
+            <p id="emailErrMsg" class="error-message"></p>
+            <!-- Password -->
+            <label for="Password">Password</label>
+            <input type="password" id="password" placeholder="Enter Your Password " maxlength="8">
+            <p id="passwordErrMsg" class="error-message"></p>
+
+            <button type="submit" onclick="onclickSubmit">LOGIN NOW</button>
+            <span>Don't have an account ? <a href="../signup/index.html">Signup here.</a></span>
+            <span class="skip"> <a href="../Buyzone/buyzone.html">SKIP LOGIN </a> </span>
+        </form>
+    </div>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js";
+        const firebaseConfig = {
+            apiKey: "AIzaSyDdCeqEdTvGeRGpi1Fl0MxzT9PyOjJCNws",
+            authDomain: "xyzs-de5f7.firebaseapp.com",
+            projectId: "xyzs-de5f7",
+            storageBucket: "xyzs-de5f7.firebasestorage.app",
+            messagingSenderId: "304671687011",
+            appId: "1:304671687011:web:e96e3c2ef6df05b0821356"
+        };
+        const app = initializeApp(firebaseConfig);
+
+
+        let loginFormEl = document.getElementById('loginForm');
+        //Preventing default actions when user clicked enter or submit without data
+        loginFormEl.addEventListener('submit', (event) => {
+            event.preventDefault();
+            let emailEl = document.getElementById('email').value
+            let passwordEl = document.getElementById('password').value
+
+            const auth = getAuth();
+            signInWithEmailAndPassword(auth, emailEl, passwordEl)
+                .then((userCredential) => {
+                    // Signed up 
+                    const user = userCredential.user;
+                    window.location.href = "../Buyzone/buyzone.html"
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    // ..
+                    alert("Invalid Crefentials");
+                });
+        })
+    </script>
+</body>
+
+</html>

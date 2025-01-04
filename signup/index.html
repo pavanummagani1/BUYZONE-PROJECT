@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./signup.css">
+    <title>SIGN UP</title>
+</head>
+
+<body>
+    <div class="signupForm">
+        <span class="formTitle">SIGN UP</span>
+        <form class="form" id="signUpForm">
+            <!-- Email -->
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter Your Email">
+
+            <!-- Password -->
+            <label for="Password">Password</label>
+            <input type="password" id="password" placeholder="Enter Your Password " maxlength="8">
+
+            <!-- submit button  -->
+            <button type="submit" id="submitSignUp">SIGN UP</button>
+            <span>Already have an account ? <a href="../login/index.html">Login here</a></span>
+        </form>
+    </div>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js";
+        const firebaseConfig = {
+            apiKey: "AIzaSyDdCeqEdTvGeRGpi1Fl0MxzT9PyOjJCNws",
+            authDomain: "xyzs-de5f7.firebaseapp.com",
+            projectId: "xyzs-de5f7",
+            storageBucket: "xyzs-de5f7.firebasestorage.app",
+            messagingSenderId: "304671687011",
+            appId: "1:304671687011:web:e96e3c2ef6df05b0821356"
+        };
+        const app = initializeApp(firebaseConfig);
+
+
+        let signUpFormEl = document.getElementById('signUpForm');
+        //Preventing default actions when user clicked enter or submit without data
+        signUpFormEl.addEventListener('submit', (event) => {
+            event.preventDefault();
+            let emailEl = document.getElementById('email').value
+            let passwordEl = document.getElementById('password').value
+
+            const auth = getAuth();
+            createUserWithEmailAndPassword(auth, emailEl, passwordEl)
+                .then((userCredential) => {
+                    // Signed up 
+                    const user = userCredential.user;
+                    window.location.href = "../login/index.html"
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    // ..
+                    alert("Failed to Create USER");
+                });
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" href="../Images/favicons/website.png" type="image/x-icon">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./carouselCard.css">
+    <link rel="stylesheet" href="./hsections.css">
+    <link rel="stylesheet" href="./footer.css">
+
+    <title>BUYZONE</title>
+</head>
+
+<body>
+    <header id="header">
+        <!-- HAMBURGER -->
+        <input type="checkbox" id="hamCheckbox">
+        <label for="hamCheckbox" class="hamburger"><i class="fa-solid fa-bars"></i></label>
+        <!-- LOGO -->
+        <div class="logoContainer">
+            <span class="logo">BUYZONE</span>
+        </div>
+        <!-- ADDRESS -->
+        <div class="Address">
+            <span><i class="fa-solid fa-location-dot"></i></span>
+            <div class="address">
+                <span class="deliver">Deliver to USER</span>
+                <span class="location">HYDERABAD 500019</span>
+            </div>
+        </div>
+        <!-- SEARCH BAR -->
+        <div class="searchbar-container">
+            <!-- ITEM DROPDOWN -->
+            <select class="searchDropdown">
+                <option>ALL</option>
+                <option>DEVICES</option>
+                <option>FRESH</option>
+                <option>FASHION</option>
+                <option>PHARMACY</option>
+                <option>BOOKS</option>
+                <option>VIDEO</option>
+                <option>GROCERY</option>
+                <option>DEALS</option>
+                <option>GIFT CARDS</option>
+            </select>
+
+            <input type="text" class="searchinput" placeholder="Search BUYZONE.in">
+
+            <div class="searchIcon">
+                <i class="fa-solid fa-magnifying-glass height "></i>
+            </div>
+        </div>
+        <input type="checkbox" id="loginbox">
+        <!-- login desktop -->
+        <div class="userDetails">
+            <label for="loginbox"><img src="../Images/Navbar_Images/user-profile-circle-svgrepo-com.svg" alt=""
+                    class="usericon">
+            </label>
+        </div>
+        <!-- login mobile -->
+        <div class="userlogin">
+            <label for="loginbox" class="user-icon"><i class="fa-solid fa-user"></i></label>
+        </div>
+
+        <!-- language -->
+        <div class="language">
+            <img src="../Images/Navbar_Images/Flag_of_India.svg.webp" class="flagIMG" alt="flag">
+            <!-- LANGUAGE Dropdown -->
+            <select class="languagedropdown">
+                <option value="">Eng</option>
+                <option value="">HIN</option>
+                <option value="">TEL</option>
+                <option value="">TAM</option>
+                <option value="">MAL</option>
+                <option value="">KAN</option>
+                <option value="">BEN</option>
+                <option value="">ORI</option>
+            </select>
+        </div>
+        <!-- returns and order -->
+        <div class="return">
+            Returns & orders
+        </div>
+        <!-- CART -->
+        <div class="cart">
+            <span><i class="fa-solid fa-cart-shopping"></i></span>
+            <span class="cart-title">CART</span>
+        </div>
+
+
+        <!-- Login-bar -->
+        <div class="loginbar">
+            <a href="../login/index.html" class="button">Logout</a>
+            <span><a href="#" class="login-links">Your Orders</a></span>
+            <span><a href="#" class="login-links">Your Wishlist</a></span>
+            <span><a href="#" class="login-links">Your Cart</a></span>
+            <span><a href="#" class="login-links">Recently Viewed</a></span>
+        </div>
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="side-user">
+                <img src="../Images/Navbar_Images/user-profile-circle-svgrepo-com.svg" alt="" class="usericon">
+                <span>Hello, SignIn</span>
+            </div>
+            <div class="sidebar-section">
+                <span class="section-title">Trending</span>
+                <span>Best Sellers</span>
+                <span>New Releases</span>
+                <span>Movers and Shakers</span>
+            </div>
+            <hr>
+            <div class="sidebar-section">
+                <span class="section-title">Digital Content and Devices</span>
+                <span>Echo & Alexa</span>
+                <span>Fire TV</span>
+                <span>Amazon Prime Video</span>
+                <span>Audibile Ebooks</span>
+                <span>Amazon Prime Music</span>
+            </div>
+            <hr>
+            <div class="sidebar-section">
+                <span class="section-title">Programs and Features</span>
+                <span>Gift Cards</span>
+                <span>Amazon Pay</span>
+                <span>Amazon Launchpad</span>
+                <span>Amazon Business</span>
+            </div>
+            <hr>
+            <div class="sidebar-section">
+                <span class="section-title">Help and Settings</span>
+                <span>Your Account</span>
+                <span>Customer Service</span>
+                <span>Sign Out</span>
+            </div>
+            <hr>
+        </div>
+    </header>
+
+    <main>
+        <!-- Carousel -->
+        <!-- Carousel desktop Section -->
+        <div id="carouselExampleControls" class="carousel slide carousel-desktop" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../Images/Carousel-Images/C-1.jpg" class="d-block w-100  Cimages" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Images/Carousel-Images/C-2.jpg" class="d-block w-100 Cimages" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Images/Carousel-Images/C-3.jpg" class="d-block w-100 Cimages" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Images/Carousel-Images/C-4.jpg" class="d-block w-100 Cimages" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Images/Carousel-Images/C-5.jpg" class="d-block w-100 Cimages" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Carousel mobile Section -->
+        <div id="carouselExampleControls" class="carousel slide carousel-mobile" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../Images/Carousel_Mobile/CM_1.jpg" class="d-block w-100  Cimages" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Images/Carousel_Mobile/CM_2.jpg" class="d-block w-100 Cimages" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Images/Carousel_Mobile/CM_3.jpg" class="d-block w-100 Cimages" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Images/Carousel_Mobile/CM_4.jpg" class="d-block w-100 Cimages" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Images/Carousel_Mobile/CM_5.jpg" class="d-block w-100 Cimages" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Images/Carousel_Mobile/CM_6.jpg" class="d-block w-100 Cimages" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Images/Carousel_Mobile/CM_7.jpg" class="d-block w-100 Cimages" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!--Carousel Card--> 
+        <div class="center-content">
+        <section class="carouselCard-Section">
+            <!-- Carousel Card-1 -->
+            <section class="carouselCard" id="CarouselCard_1">
+                <span>Appliances for your home | UPTO 55% off</span>
+                <div class="images">
+                    <div class="itemCard">
+                        <img src="../Images/Carousel_card_images/carouselCard1_1.jpg" alt="AC">
+                        <span>Air conditioner</span>
+                    </div>
+                    <div class="itemCard">
+                        <img src="../Images/Carousel_card_images/carouselCard1_2.jpg" alt="AC">
+                        <span>Micro Oven</span>
+                    </div>
+                    <div class="itemCard">
+                        <img src="../Images/Carousel_card_images/carouselCard1_3.jpg" alt="AC">
+                        <span>Refrigrator</span>
+                    </div>
+                    <div class="itemCard">
+                        <img src="../Images/Carousel_card_images/carouselCard1_4.jpg" alt="AC">
+                        <span>Wash Machine</span>
+                    </div>
+                </div>
+                <a href="#" class="seemore">See more</a>
+            </section>
+            <!--Carousel-Card-2 -->
+            <section class="carouselCard" id="CarouselCard_2">
+                <span>Revamp Your Home in the Style</span>
+                <div class="images">
+                    <div class="itemCard">
+                        <img src="../Images/Carousel_card_images/carouselCard2_1.jpg" alt="Cushion Covers">
+                        <span>Cushions & More</span>
+                    </div>
+                    <div class="itemCard">
+                        <img src="../Images/Carousel_card_images/carouselCard2_2.jpg" alt="Vases">
+                        <span>Vases & More</span>
+                    </div>
+                    <div class="itemCard">
+                        <img src="../Images/Carousel_card_images/carouselCard2_3.jpg" alt="Storage">
+                        <span>Home Storage</span>
+                    </div>
+                    <div class="itemCard">
+                        <img src="../Images/Carousel_card_images/carouselCard2_4.jpg" alt="Lightining">
+                        <span>Lighting Sols</span>
+                    </div>
+                </div>
+                <a href="#" class="seemore">See more</a>
+            </section>
+
+            <!-- Carousel-Card-3 -->
+            <section class="carouselCard" id="CarouselCard_3">
+                <span>Starting &#8377 149 | Headphones</span>
+                <div class="images">
+                    <div class="itemCard">
+                        <img src="../Images/Carousel_card_images/carouselCard3_1.jpg" alt="AC">
+                        <span>Starting &#8377 249 | boAt </span>
+                    </div>
+                    <div class="itemCard">
+                        <img src="../Images/Carousel_card_images/carouselCard3_2.jpg" alt="AC">
+                        <span>Starting &#8377 349 | boult</span>
+                    </div>
+                    <div class="itemCard">
+                        <img src="../Images/Carousel_card_images/carouselCard3_3.jpg" alt="AC">
+                        <span>Starting &#8377 649 |Noise</span>
+                    </div>
+                    <div class="itemCard">
+                        <img src="../Images/Carousel_card_images/carouselCard3_4.jpg" alt="AC">
+                        <span>Starting &#8377 149 Zebronics</span>
+                    </div>
+                </div>
+                <a href="#" class="seemore">See more</a>
+            </section>
+
+            <!-- Carousel-card-4 -->
+            <section class="carouselCard" id="CarouselCard_4">
+                <span>Starting &#8377 | Amazon Brands & More </span>
+                <div class="images">
+                    <div class="itemCard">
+                        <img src="../Images/Carousel_card_images/carouselCard4_1.jpg" alt="AC">
+                        <span>BedSheets</span>
+                    </div>
+                    <div class="itemCard">
+                        <img src="../Images/Carousel_card_images/carouselCard4_2.jpg" alt="AC">
+                        <span>Curtains</span>
+                    </div>
+                    <div class="itemCard">
+                        <img src="../Images/Carousel_card_images/carouselCard4_3.jpg" alt="AC">
+                        <span>Iron Board & More</span>
+                    </div>
+                    <div class="itemCard">
+                        <img src="../Images/Carousel_card_images/carouselCard4_4.jpg" alt="AC">
+                        <span>Home decor</span>
+                    </div>
+                </div>
+                <a href="#" class="seemore">See more</a>
+            </section>
+
+            <!-- Carousel-Card-5 -->
+            <section class="carouselCard" id="CarouselCard_5">
+                <span>Automotive Essentials | Upto 60% off</span>
+                <div class="images">
+                    <div class="itemCard">
+                        <img src="../Images/Carousel_card_images/carouselCard5_1.jpg" alt="AC">
+                        <span>Cleaning Accessories</span>
+                    </div>
+                    <div class="itemCard">
+                        <img src="../Images/Carousel_card_images/carouselCard5_2.jpg" alt="AC">
+                        <span>Tyre & rim care</span>
+                    </div>
+                    <div class="itemCard">
+                        <img src="../Images/Carousel_card_images/carouselCard5_3.jpg" alt="AC">
+                        <span>Helmets</span>
+                    </div>
+                    <div class="itemCard">
+                        <img src="../Images/Carousel_card_images/carouselCard5_4.jpg" alt="AC">
+                        <span>Vaccum Cleaner</span>
+                    </div>
+                </div>
+                <a href="#" class="seemore">See more</a>
+            </section>
+
+            <!-- Carousel-card-6 -->
+            <section class="carouselCard" id="CarouselCard_6">
+                <span>Upto 60% off | Styles for women</span>
+                <div class="images">
+                    <div class="itemCard">
+                        <img src="../Images/Carousel_card_images/carouselCard7_1.jpg" alt="AC">
+                        <span>Women's</span>
+                    </div>
+                    <div class="itemCard">
+                        <img src="../Images/Carousel_card_images/carouselCard6_4.jpg" alt="AC">
+                        <span>FootWear</span>
+                    </div>
+                    <div class="itemCard">
+                        <img src="../Images/Carousel_card_images/carouselCard7_3.jpg" alt="AC">
+                        <span>Watches</span>
+                    </div>
+                    <div class="itemCard">
+                        <img src="../Images/Carousel_card_images/carouselCard7_4.jpg" alt="AC">
+                        <span>Fashion Jewellery</span>
+                    </div>
+                </div>
+                <a href="#" class="seemore">End of Season Sale</a>
+            </section>
+
+            <!-- Carousel-Card-7 -->
+            <section class="carouselCard" id="CarouselCard_7">
+                <span>Upto 60% off | Professional tools</span>
+                <div class="images">
+                    <div class="itemCard">
+                        <img src="../Images/Carousel_card_images/carouselCard8_1.jpg" alt="AC">
+                        <span>Tools</span>
+                    </div>
+                    <div class="itemCard">
+                        <img src="../Images/Carousel_card_images/carouselCard8_2.jpg" alt="AC">
+                        <span>Measuring </span>
+                    </div>
+                    <div class="itemCard">
+                        <img src="../Images/Carousel_card_images/carouselCard8_3.jpg" alt="AC">
+                        <span>Cleaning Supplies</span>
+                    </div>
+                    <div class="itemCard">
+                        <img src="../Images/Carousel_card_images/carouselCard8_4.jpg" alt="AC">
+                        <span>Medical Supplies</span>
+                    </div>
+                </div>
+                <a href="#" class="seemore">See more</a>
+            </section>
+
+            <!-- Carousel-card-8 -->
+            <section class="carouselCard" id="CarouselCard_8">
+                <span>Min. 40% off| Baby Care & Toys</span>
+                <div class="images">
+                    <div class="itemCard">
+                        <img src="../Images/Carousel_card_images/diapers.jpg" alt="AC">
+                        <span>Diapers and Wipes</span>
+                    </div>
+                    <div class="itemCard">
+                        <img src="../Images/Carousel_card_images/highchairs.jpg" alt="AC">
+                        <span>50% off| High chairs & More</span>
+                    </div>
+                    <div class="itemCard">
+                        <img src="../Images/Carousel_card_images/toys.jpg" alt="AC">
+                        <span>40% off| Toys</span>
+                    </div>
+                    <div class="itemCard">
+                        <img src="../Images/Carousel_card_images/games.jpg" alt="AC">
+                        <span>40% off|Games</span>
+                    </div>
+                </div>
+                <a href="#" class="seemore">See all Offers</a>
+            </section>
+            <!-- Carousel-card-9 -->
+            <section class="carouselCard" id="CarouselCard_9">
+                <span>Min. 40% off| Baby Care & Toys</span>
+                <div class="images">
+                    <div class="itemCard">
+                        <img src="../Images/Carousel_card_images/diapers.jpg" alt="AC">
+                        <span>Diapers and Wipes</span>
+                    </div>
+                    <div class="itemCard">
+                        <img src="../Images/Carousel_card_images/highchairs.jpg" alt="AC">
+                        <span>50% off| High chairs & More</span>
+                    </div>
+                    <div class="itemCard">
+                        <img src="../Images/Carousel_card_images/toys.jpg" alt="AC">
+                        <span>40% off| Toys</span>
+                    </div>
+                    <div class="itemCard">
+                        <img src="../Images/Carousel_card_images/games.jpg" alt="AC">
+                        <span>40% off|Games</span>
+                    </div>
+                </div>
+                <a href="#" class="seemore">See all Offers</a>
+            </section>
+        </section>
+        </div>
+        <section class="advertisementSection">
+            <span>Watch on BuyZone Prime</span>
+            <section class="additems">
+                <div class="addImage">
+                    <img src="../Images/Advertisements/primeAdd.jpg" alt="" class="posters">
+                </div>
+                <div class="addImage ">
+                    <img src="../Images/Advertisements/puspha.jpg" alt="" class="posters">
+                </div>
+            </section>
+        </section>
+        <!-- mobile cards -->
+        <section class="mobile">
+            <section class="Mobile-cards">
+                <!-- card-1 -->
+                <div class="mobilecard-container">
+                    <img src="../Images/Phone_Cards/BuyZone_p1.jpeg" alt="" class="BuyzoneProduct">
+                    <img src="../Images/Phone_Cards/Buyzone_p2.jpeg" alt="" class="BuyzoneProduct">
+                    <img src="../Images/Phone_Cards/Buyzone_p3.jpeg" alt="" class="BuyzoneProduct">
+                    <img src="../Images/Phone_Cards/Buyzone_p4.jpeg" alt="" class="BuyzoneProduct">
+                </div>
+                <!-- card-2 -->
+                <div class="mobilecard-container">
+                    <img src="../Images/Phone_Cards/card2_1.jpg" alt="" class="BuyzoneProduct">
+                    <img src="../Images/Phone_Cards/Card2_2.jpg" alt="" class="BuyzoneProduct">
+                    <img src="../Images/Phone_Cards/Card2_3.jpg" alt="" class="BuyzoneProduct">
+                    <img src="../Images/Phone_Cards/Card2_4.jpg" alt="" class="BuyzoneProduct">
+                </div>
+
+                <!-- card-3 -->
+                <div class="mobilecard-container">
+                    <img src="../Images/Phone_Cards/Under_1.jpg" alt="" class="BuyzoneProductC3">
+                    <img src="../Images/Phone_Cards/Under_2.jpg" alt="" class="BuyzoneProductC3">
+                    <img src="../Images/Phone_Cards/Under_3.jpg" alt="" class="BuyzoneProductC3">
+                    <img src="../Images/Phone_Cards/Under_4.jpg" alt="" class="BuyzoneProductC3">
+                </div>
+
+                <!-- Card-4 -->
+                <div class="itemcard-container">
+                    <img src="../Images/Phone_Cards/Headsets.jpg" alt="" class="itemCards">
+                </div>
+                <!-- Card-5 -->
+                <div class="itemcard-container">
+                    <img src="../Images/Phone_Cards/Grocery.jpg" alt="" class="itemCards">
+                </div>
+                <!-- Card-6 -->
+                <div class="itemcard-container">
+                    <img src="../Images/Phone_Cards/Homeware.jpg" alt="" class="itemCards">
+                </div>
+                <!-- Card-7 -->
+                <div class="itemcard-container">
+                    <img src="../Images/Phone_Cards/Mobile_Accessories.jpg" alt="" class="itemCards">
+                </div>
+                <!-- Card-8 -->
+                <div class="itemcard-container">
+                    <img src="../Images/Phone_Cards/toys.jpg" alt="" class="itemCards">
+                </div>
+                <!-- Card-9 -->
+                <div class="itemcard-container">
+                    <img src="../Images/Phone_Cards/Bazaar.jpg" alt="" class="itemCards">
+                </div>
+                <!-- Card-10-->
+                <div class="itemcard-container">
+                    <img src="../Images/Phone_Cards/Watches.jpg" alt="" class="itemCards">
+                </div>
+                <!-- Card -11  -->
+                <div class="itemcard-container">
+                    <img src="../Images/Phone_Cards/laptop.jpg" alt="" class="itemCards">
+                </div>
+                <!-- Card -12 -->
+                <div class="itemcard-container">
+                    <img src="../Images/Phone_Cards/prime.jpg" alt="" class="itemCards">
+                </div>
+                <!-- Card-13-->
+                <div class="itemcard-container">
+                    <img src="../Images/Phone_Cards/Welcome_offers.jpg" alt="" class="itemCards">
+                </div>
+            </section>
+            <section class="delivery">
+                <img src="../Images/Phone_Cards/delivery.jpg" alt="" class="deliveryimage">
+            </section>
+            <section class="advertisement">
+                <img src="../Images/Phone_Cards/Buyzone_prime.jpg" alt="" class="buyzoneprimeimg">
+            </section>
+        </section>
+    </main>
+
+    <!-- Hsections -->
+    <div class="hSections">
+        <section class="items">
+            <span>Best Sellers in Computers & Accessories</span>
+            <section class="caImages">
+                <div>
+                    <img src="../Images/Computer_Asscerioes/CA-1.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Computer_Asscerioes/CA-2.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Computer_Asscerioes/CA-3.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Computer_Asscerioes/CA-4.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Computer_Asscerioes/CA-5.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Computer_Asscerioes/CA-6.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Computer_Asscerioes/CA-7.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Computer_Asscerioes/CA-8.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Computer_Asscerioes/CA-9.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Computer_Asscerioes/CA-10.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Computer_Asscerioes/CA-11.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Computer_Asscerioes/CA-12.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Computer_Asscerioes/CA-13.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Computer_Asscerioes/CA-14.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Computer_Asscerioes/CA-15.jpg" alt="" class="itemsImages">
+                </div>
+            </section>
+        </section>
+
+        <!-- Bike Section -->
+
+        <section class="items">
+            <span>Buy Bikes At Lowest EMIs</span>
+            <section class="caImages">
+                <div>
+                    <img src="../Images/Bikes/B-1.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Bikes/B-2.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Bikes/B-3.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Bikes/B-4.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Bikes/B-5.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Bikes/B-6.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Bikes/B-7.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Bikes/B-8.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Bikes/B-9.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Bikes/B-10.jpg" alt="" class="itemsImages">
+                </div>
+            </section>
+        </section>
+
+        <!-- Grocery Items -->
+        <section class="items">
+            <span>Best Sellers in Grocery & Gourmet Foods</span>
+            <section class="caImages">
+                <div>
+                    <img src="../Images/Grocery_Images/Grocery_1.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Grocery_Images/Grocery_2.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Grocery_Images/Grocery_3.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Grocery_Images/Grocery_4.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Grocery_Images/Grocery_5.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Grocery_Images/Grocery_6.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Grocery_Images/Grocery_7.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Grocery_Images/Grocery_14.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Grocery_Images/Grocery_1.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Grocery_Images/Grocery_10.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Grocery_Images/Grocery_11.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Grocery_Images/Grocery_12.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Grocery_Images/Grocery_13.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Grocery_Images/Grocery_14.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Grocery_Images/Grocery_15.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Grocery_Images/Grocery_16.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Grocery_Images/Grocery_17.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Grocery_Images/Grocery_18.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Grocery_Images/Grocery_19.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Grocery_Images/Grocery_20.jpg" alt="" class="itemsImages">
+                </div>
+            </section>
+        </section>
+
+        <!-- Home Decor sections -->
+        <section class="items">
+            <span>Best deals curated from stores nearby & HOME DECOR</span>
+            <section class="caImages">
+                <div>
+                    <img src="../Images/Home_Decor/HomeDecor_1.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Home_Decor/HomeDecor_2.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Home_Decor/HomeDecor_3.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Home_Decor/HomeDecor_4.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Home_Decor/HomeDecor_5.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Home_Decor/HomeDecor_6.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Home_Decor/HomeDecor_7.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Home_Decor/HomeDecor_8.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Home_Decor/HomeDecor_9.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Home_Decor/HomeDecor_10.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Home_Decor/HomeDecor_11.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Home_Decor/HomeDecor_12.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Home_Decor/HomeDecor_13.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Home_Decor/HomeDecor_14.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Home_Decor/HomeDecor_15.jpg" alt="" class="itemsImages">
+                </div>
+            </section>
+        </section>
+
+
+        <!-- Watches -->
+        <section class="items">
+            <span>Get Watches at Lowest Prices</span>
+            <section class="caImages">
+                <div>
+                    <img src="../Images/Watches/watch_1.webp" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Watches/watch_2.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Watches/Watch_3.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Watches/Watch_4.webp" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Watches/watch_5.webp" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Watches/Watch_6.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Watches/watch_7.webp" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Watches/watch_8.webp" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Watches/watch_9.webp" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Watches/Watch_11.webp" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Watches/Watch_12.webp" alt="" class="itemsImages">
+                </div>
+            </section>
+        </section>
+
+
+        <!-- Mobile Phone sections -->
+        <section class="items">
+            <span>Mobile Phones</span>
+            <section class="caImages">
+                <div>
+                    <img src="../Images/Mobile-phones/Mobile_1.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Mobile-phones/Mobile_2.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Mobile-phones/Mobile_3.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Mobile-phones/Mobile_4.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Mobile-phones/Mobile_5.jpg" alt="" class=" itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Mobile-phones/Mobile_6.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Mobile-phones/Mobile_7.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Mobile-phones/Mobile_8.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Mobile-phones/Mobile_9.jpg" alt="" class="itemsImages">
+                </div>
+                <div>
+                    <img src="../Images/Mobile-phones/Mobile_10.jpg" alt="" class="itemsImages">
+                </div>
+            </section>
+        </section>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <section class="backtotop">Back To Top</section>
+        <section class="footerItems">
+            <!--  -->
+            <section class="footerColoumn">
+                <span class="footerTitle">Get Us to Know</span>
+                <span>About BUYZONE</span>
+                <span>Careers</span>
+                <span>Press Releases</span>
+                <span>Buyzone Science</span>
+            </section>
+            <!--  -->
+            <section class="footerColoumn">
+                <span class="footerTitle">Connect With Us</span>
+                <span>Facebook</span>
+                <span>Twitter</span>
+                <span>Instagram</span>
+                <span>Linkedin</span>
+            </section>
+            <!--  -->
+            <section class="footerColoumn">
+                <span class="footerTitle">Make Money With Us</span>
+                <span>Sell on Buyzone</span>
+                <span>Sell under Buyzone Acceletor</span>
+                <span>Protect and Build your brand</span>
+                <span>Buyzone Global Selling</span>
+                <span>Supply to Buyzone</span>
+                <span>Become an Affliate</span>
+                <span>Fullfillment By Buyzone</span>
+                <span>Advertise your Products</span>
+                <span>Buyzone Pay on Merchants</span>
+            </section>
+            <!--  -->
+            <section class="footerColoumn">
+                <span class="footerTitle">Get Us to Know</span>
+                <span>About Buyzone</span>
+                <span>Careers</span>
+                <span>Press Releases</span>
+                <span>Buyzone Science</span>
+            </section>
+        </section>
+        <hr>
+        <section class="bottom-Section">
+            <span>BUYZONE</span>
+            <span>
+                <ion-icon name="globe-outline"></ion-icon>
+                English
+            </span>
+            <span>
+                <img src="../Images/Navbar_Images/Flag_of_India.svg.webp" alt="" class="indiaflag"> &nbsp India
+            </span>
+        </section>
+        <section class="copy">
+            &#169 Copyright & Designed and Developed by PAVAN KALYAN UMMAGANI &#128155
+        </section>
+    </footer>
+    <script src="https://kit.fontawesome.com/d06933270a.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

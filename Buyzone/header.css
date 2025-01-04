@@ -1,0 +1,334 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+header {
+    background-color: #131921;
+    color: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+/* HAMBURGER */
+.hamburger {
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* LOGO */
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    width: 100%;
+}
+
+/* ADDRESS */
+.Address {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+}
+
+.deliver {
+    color: #817e7e;
+    font-size: 16px;
+}
+
+.location {
+    font-weight: 600;
+}
+
+/* SEARCH BAR */
+.searchbar-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    height: 40px;
+    width: 35%;
+}
+
+.searchDropdown {
+    height: 100%;
+    width: 20%;
+    text-align: center;
+    border: none;
+}
+::placeholder{
+    text-align: center;
+}
+.searchinput {
+    height: 100%;
+    flex-grow: 1;
+    border: none;
+    outline: none;
+}
+
+.searchIcon {
+    background-color: #fcbb68;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.height {
+    color: black;
+    font-size: 20px;
+}
+
+/* Language*/
+.language {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.languagedropdown {
+    height: 100%;
+    border: none;
+    padding: 2px;
+}
+
+.flagIMG {
+    width: 2.2em;
+    height: 1.3em;
+}
+
+.return {
+    width: 4em;
+}
+
+.return::first-line {
+    font-size: 1em;
+}
+
+.cart {
+    font-size: 1.2em;
+    display: flex;
+    gap: 0.3rem;
+
+}
+
+.usericon {
+    /* color: #fff; */
+    height: 30px;
+    width: 30px;
+    /* background-color: #fff; */
+}
+
+.userlogin {
+    display: none;
+}
+
+.loginbar {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    position: absolute;
+    right: 20%;
+    top: 100%;
+    z-index: 1;
+}
+
+.button {
+    display: inline-block;
+    background-color: #fcbb68;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: 700;
+    border-color: #f6d663;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover:not(.login-links) {
+    color: #fff;
+}
+
+.login-links:hover {
+    color: #000;
+}
+
+.login-links {
+    text-decoration: none;
+    color: #000;
+}
+
+#loginbox {
+    display: none;
+}
+
+#loginbox:checked~.loginbar {
+    display: flex;
+}
+
+.sidebar {
+    display: none;
+    background-color: #fff;
+    color: #000;
+    padding: 14px;
+    /* display: flex; */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    height: fit-content;
+    overflow-y: scroll;
+    z-index: 1;
+}
+
+.side-user {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    gap: 10px;
+    padding: 16px;
+    border-radius: 20px;
+}
+
+.sidebar-section {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-title {
+    color: #000;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 5px;
+}
+
+#hamCheckbox {
+    display: none;
+}
+
+#hamCheckbox:checked~.sidebar {
+    display: flex;
+}
+
+@media screen and (min-width:1000px) and (max-width:1199px) {
+    .Address {
+        display: none;
+    }
+    .loginbar{
+        right: 30%;
+        border-radius: 5px;
+        box-shadow: #32325d40 0px 50px 100px -20px, #0000004d 0px 30px 60px -30px, #0a254059 0px -2px 6px 0px inset;
+    }
+
+}
+
+@media screen and (min-width:751px) and (max-width:999px) {
+    .userlogin {
+        display: flex;
+    }
+
+    .Address,
+    .return,
+    .userDetails {
+        display: none;
+    }
+
+    .searchbar {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width:501px) and (max-width:750px) {
+
+    .Address,
+    .return,
+    .userDetails,
+    .language,
+    .cart{
+        display: none;
+    }
+
+    .userlogin {
+        display: flex;
+    }
+
+    #loginbox:checked~.loginbar {
+        display: flex;
+    }
+
+    .searchbar {
+        width: 50%;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .logo {
+        width: 100%;
+        font-size: 0.9em;
+    }
+
+    .searchbar-container {
+        width: 70%;
+    }
+
+    .loginbar {
+        right: 5%;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    .logo,
+    .Address,
+    .language,
+    .return,
+    .cart {
+        display: none;
+    }
+
+    .searchbar-container {
+        width: 85%;
+    }
+
+    .sidebar {
+        width: 55vw;
+        padding: 1.2em;
+        font-size: 14px;
+    }
+
+    .loginbar {
+        right: 0px;
+    }
+
+    #loginbox:checked~.loginbar {
+        display: flex;
+    }
+
+}

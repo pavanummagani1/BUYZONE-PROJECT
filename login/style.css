@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-image: url('../Images/login/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.loginForm{ 
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid #fcbb68;
+}
+.formTitle{
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+#loginForm{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 600;
+}
+#loginForm>span{
+    color: #fff;
+    align-self: center;
+}
+#loginForm>label{
+    color: #fff;
+}
+#loginForm>input{
+    padding: 1em;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    outline: none;
+}
+#loginForm>button{
+    padding: 10px;
+    width: 50%;
+    align-self: center;
+    border: 2px solid #fcbb68;
+    color: #fff;
+    background-color:#fcbb68;
+    border-radius: 10px;
+}
+#loginForm>span>a{
+    color: #fcbb68;
+    text-decoration: none;
+}
+
+@media screen and (max-width:650px) {
+    .loginForm{
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .formTitle{
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+    #loginForm{
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-weight: 600;
+    }
+    #loginForm>span{
+        align-self: center;
+    }
+    #loginForm>input{
+        padding: 1em;
+        border: 2px solid #000;
+        border-radius: 10px;
+    }
+    #loginForm>button{
+        padding: 10px;
+        width: 50%;
+        align-self: center;
+        border: 2px solid  #fcbb68;
+        color: #fff;
+        background-color: #fcbb68;
+        border-radius: 10px;
+    }
+    #loginForm>span>a{
+        color:  #fcbb68;
+        text-decoration: none;
+    }
+    
+}
+
+@media screen and (min-width:651px) and (max-width:1000px) {
+    .loginForm{
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .formTitle{
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+    #loginForm{
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-weight: 600;
+    }
+    #loginForm>span{
+        align-self: center;
+    }
+    #loginForm>input{
+        padding: 1em;
+        border: 2px solid #000;
+        border-radius: 10px;
+    }
+    #loginForm>button{
+        padding: 10px;
+        width: 50%;
+        align-self: center;
+        border: 2px solid  #fcbb68;
+        color: #fff;
+        background-color: #fcbb68;
+        border-radius: 10px;
+    }
+    #loginForm>span>a{
+        color:  #fcbb68;
+        text-decoration: none;
+    }
+    
+}
